@@ -10,6 +10,7 @@ public class Hero {
     private boolean mCompleted;
     private LocalDateTime mCreatedAt;
     private static List<Hero> instances = new ArrayList<Hero>();
+    public static void clear(){instances.clear();}
 
 public Hero(String name, Integer age, String power, String weakness){
     mName = name;

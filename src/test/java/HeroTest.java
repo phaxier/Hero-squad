@@ -55,6 +55,18 @@ public class HeroTest {
         assertEquals(true, Hero.all().contains(secondHero));
     }
 
+    @Test
+    public void clear_emptiesAllHeroFromArrayList_0() {
+        Hero myHero = new Hero("Mathew",9,"fit","poor");
+        Hero.clear();
+        assertEquals(Hero.all().size(), 0);
+    }
 
+    @Test
+    public void getId_heroInstantiateWithAnID_1() {
+        Hero.clear();  // Remember, the test will fail without this line! We need to empty leftover Tasks from previous tests!
+        Hero myHero = new Hero("Mathew",9,"fit","poor");
+        assertEquals(1, myHero.getId());
+    }
 
     }
