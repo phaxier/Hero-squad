@@ -34,9 +34,9 @@ public class HeroTest {
             assertEquals("poor", myHero.getWeakness());
 
         }
-        @Test
-    public void isAdded_isFalseAfterInstantiation_false(){
-        Hero myHero = new Hero("Mathew", 9, "fit","poor");
-        assertEquals(false, myHero.isAdded());
-        }
+    @Test
+    public void isCompleted_isFalseAfterInstantiation_false() {
+        Hero myHero = new Hero("Mathew",9,"fit","poor");
+        assertEquals(false, myHero.isCompleted());
+    }
     }
