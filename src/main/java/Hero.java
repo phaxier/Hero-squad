@@ -10,7 +10,7 @@ public class Hero {
     private boolean mCompleted;
     private LocalDateTime mCreatedAt;
     private static List<Hero> instances = new ArrayList<Hero>();
-    public static void clear(){instances.clear();}
+    private int mId;
 
 public Hero(String name, Integer age, String power, String weakness){
     mName = name;
@@ -20,6 +20,7 @@ public Hero(String name, Integer age, String power, String weakness){
     mCompleted = false;
     mCreatedAt = LocalDateTime.now();
     instances.add(this);
+    mId = instances.size();
 }
 
 
@@ -30,6 +31,9 @@ public String getWeakness() {return mWeakness;}
 public boolean isCompleted (){return mCompleted;}
 public LocalDateTime getCreatedAt() {return mCreatedAt;}
 public static List< Hero> all(){ return instances;}
+public static void clear() {instances.clear();}
+public int getId() {return mId;}
+
 }
 
 
