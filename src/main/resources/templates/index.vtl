@@ -9,20 +9,34 @@
 <p>No Heroes!</p>
         #end
 
-<p>Add a new Task:</p>
+<p>Add a new Hero:</p>
 
 <form action = "/heroes" method = "post">
+
+<div class="form-group">
+
 <label for="name">Hero Name </label>
-<input id="name" name="name" type="text">
+<input id="name" name="name" class="form-control " type="text">
 
+</div>
+
+<div class="form-group">
 <label for="age">Hero's age </label>
-<input id="age" name="age" type="number">
+<input id="age" name="age" class="form-control" type="number">
 
+</div>
+
+<div class="form-group">
 <label for="power">Hero's power </label>
-<input id="power" name="power" type="text">
+<input id="power" name="power" class="form-control" type="text">
 
+</div>
+
+<div class="form-group">
 <label for="weakness">Hero's weakness </label>
-<input id="weakness" name="weakness" type="text">
+<input id="weakness" name="weakness" class="form-control" type="text">
+
+</div>
 
 <button type="submit" class="btn btn default">Add Hero</button>
 

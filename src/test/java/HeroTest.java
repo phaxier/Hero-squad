@@ -13,14 +13,14 @@ public class HeroTest {
     @Test
     public void Hero_instantiatesWithName_String() {
         Hero myHero = new Hero("Mow", 9, "fit", "poor");
-        assertEquals("Mow the lawn", myHero.getName());
+        assertEquals("Mow", myHero.getName());
 
     }
 
     @Test
     public void Hero_instantiatesWithAge_Integer() {
         Hero myHero = new Hero("Mow", 9, "fit", "poor");
-        assertEquals("9", myHero.getAge());
+        assertEquals(9,(int) myHero.getAge());
     }
         @Test
         public void Hero_instantiatesWithPower_String() {
@@ -30,8 +30,13 @@ public class HeroTest {
 
         @Test
         public void Hero_instantiatesWithWeakness_String() {
-            Hero myHero = new Hero("Mow", 9, "fit", "poor");
-            assertEquals("lawn", myHero.getWeakness());
+            Hero myHero = new Hero("lawn", 9, "fit", "poor");
+            assertEquals("poor", myHero.getWeakness());
 
+        }
+        @Test
+    public void isAdded_isFalseAfterInstantiation_false(){
+        Hero myHero = new Hero("Mathew", 9, "fit","poor");
+        assertEquals(false, myHero.isAdded());
         }
     }
