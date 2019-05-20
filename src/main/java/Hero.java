@@ -1,5 +1,6 @@
-import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Hero {
     private String mName;
@@ -8,6 +9,7 @@ public class Hero {
     private String mWeakness;
     private boolean mCompleted;
     private LocalDateTime mCreatedAt;
+    private static List<Hero> instances = new ArrayList<Hero>();
 
 public Hero(String name, Integer age, String power, String weakness){
     mName = name;
@@ -16,6 +18,7 @@ public Hero(String name, Integer age, String power, String weakness){
     mWeakness = weakness;
     mCompleted = false;
     mCreatedAt = LocalDateTime.now();
+    instances.add(this);
 }
 
 
@@ -25,7 +28,7 @@ public String getPower() {return mPower;}
 public String getWeakness() {return mWeakness;}
 public boolean isCompleted (){return mCompleted;}
 public LocalDateTime getCreatedAt() {return mCreatedAt;}
-
+public static List< Hero> all(){ return instances;}
 }
 
 

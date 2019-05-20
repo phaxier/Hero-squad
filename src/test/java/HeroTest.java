@@ -47,4 +47,14 @@ public class HeroTest {
         assertEquals(LocalDateTime.now().getDayOfWeek(), myHero.getCreatedAt().getDayOfWeek());
     }
 
+    @Test
+    public void all_returnsAllInstancesOfHero_true() {
+        Hero firstHero = new Hero("Mathew",9,"fit","poor");
+        Hero secondHero = new Hero("Jonathan",12,"bully","weak");
+        assertEquals(true, Hero.all().contains(firstHero));
+        assertEquals(true, Hero.all().contains(secondHero));
+    }
+
+
+
     }
