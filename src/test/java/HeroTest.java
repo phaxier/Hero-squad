@@ -1,5 +1,6 @@
 import org.junit.*;
 import static org.junit.Assert.*;
+import java.time.LocalDateTime;
 
 public class HeroTest {
 
@@ -39,4 +40,11 @@ public class HeroTest {
         Hero myHero = new Hero("Mathew",9,"fit","poor");
         assertEquals(false, myHero.isCompleted());
     }
+
+    @Test
+    public void getCreatedAt_instantiatesWithCurrentTime_today() {
+        Hero myHero = new Hero("Mathew",9,"fit","poor");
+        assertEquals(LocalDateTime.now().getDayOfWeek(), myHero.getCreatedAt().getDayOfWeek());
+    }
+
     }
