@@ -33,12 +33,16 @@ public class App {
             request.session().attribute("hero", newHero);
 
 
-
-
             model.put("template", "templates/success.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
+        get("/", (request, response) ->{
+            Map<String, Object> model = new HashMap<String, Object>();
+            model.put("heroes", request.session().attribute("hero"));
+            model.put("template", "templates/index.vtl");
+            return new ModelAndView(model, layout);
+        },new VelocityTemplateEngine());
     }
 
 }
