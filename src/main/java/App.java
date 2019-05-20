@@ -16,6 +16,32 @@ public class App {
        return new ModelAndView(model, layout);
    }, new VelocityTemplateEngine());
 
+   get("heroes/new",(request, response) -> {
+       Map<String, Object> model = new HashMap<String, Object>();
+       model.put("template", "templates/hero-form.vtl");
+       return new ModelAndView(model, layout);
+   }, new VelocityTemplateEngine());
+
+   get("/heroes",(request, response) -> {
+       Map<String, Object> model = new HashMap<String, Object>();
+       model.put("heroes", Hero.all());
+       model.put("template", "templates/heroes.vtl");
+       return new ModelAndView(model, layout);
+   }, new VelocityTemplateEngine());
+
+
+    post("/heroes",(request,response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+        String name= request.queryParams("name");
+        Integer age = Integer.parseInt(request.queryParams("9"));
+        String power = request.queryParams("power");
+        String weakness = request.queryParams("weakness");
+
+            Hero newHero = new Hero("Mathew",9,"fit","poor");
+            model.put("template", "templates/success.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
         post("/heroes", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
 
