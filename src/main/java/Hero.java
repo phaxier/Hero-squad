@@ -12,4 +12,9 @@ public Hero(String name, Integer age, String power, String weakness){
     mWeakness = weakness;
 }
 
+
+public String getName(){return mName;}
+public Integer getAge () {return mAge;}
+public String getPower() {return mPower;}
+public String getWeakness() {return mWeakness;}
 }
