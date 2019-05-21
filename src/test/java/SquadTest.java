@@ -5,21 +5,33 @@ public class SquadTest {
 
     @Test
     public void squad_instantiatesCorrectly_true() {
-        Squad testSquad = new Squad("Home");
-        assertEquals(true, testSquad instanceof Squad);
+        Squad squad = new Squad("Mathew", "grinds", "10");
+        assertTrue(squad instanceof Squad);
     }
 
     @Test
-    public void getName_SquadInstantiatesWithName_home(){
-        Squad testSquad = new Squad("Home");
-        assertEquals(true, testSquad.getName());
+    public void squad_instantiatesWithName_String(){
+        Squad squad = new Squad("Mathew", "grinds", "10");
+        assertEquals("Mathew", squad.getName());
+    }
+
+    @Test
+    public void squad_instantiatesWithCause_String(){
+        Squad squad = new Squad("Mathew", "grinds", "10");
+        assertEquals("grinds", squad.getCause());
+    }
+
+    @Test
+    public void squad_instantiatesWithMax_String(){
+        Squad squad = new Squad("Mathew", "grinds", "10");
+        assertEquals("10", squad.getMax());
     }
 
     @Test
     public void all_returnsAllInstancesOfSquad_true(){
-        Squad firstSquad = new Squad("Home");
-        Squad secondSquad = new Squad("Team");
-        assertEquals(true, Squad.all().contains(FirstSquad));
+        Squad firstSquad = new Squad("Mathew", "grinds", "10");
+        Squad secondSquad = new Squad("Team","find", "16");
+        assertEquals(true, Squad.all().contains(firstSquad));
         assertEquals(true, Squad.all().contains(secondSquad));
     }
 }
