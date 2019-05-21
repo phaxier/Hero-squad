@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c11ac4ce-1e07-411b-b94c-a0e5fcf4a698" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/squd-hero-form.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/squd-hero-form.vtl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="122" selection-start-line="122" selection-end-line="122" />
+            <state relative-caret-position="212">
+              <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1780#1796#0" expanded="true" />
@@ -57,16 +58,17 @@
                 <element signature="e#4169#4185#0" expanded="true" />
                 <element signature="e#4482#4498#0" expanded="true" />
                 <element signature="e#4936#4952#0" expanded="true" />
+                <element signature="e#5335#5351#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/squd-hero-form.vtl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+            <state relative-caret-position="390">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -164,8 +166,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/squad-success.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/squads.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/squad.vtl" />
-        <option value="$PROJECT_DIR$/src/main/java/App.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/squd-hero-form.vtl" />
+        <option value="$PROJECT_DIR$/src/main/java/App.java" />
       </list>
     </option>
   </component>
@@ -281,7 +283,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="708" y="27" width="658" height="741" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10784314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -489,10 +490,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/squd-hero-form.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        <state relative-caret-position="212">
+          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1780#1796#0" expanded="true" />
@@ -502,14 +510,8 @@
             <element signature="e#4169#4185#0" expanded="true" />
             <element signature="e#4482#4498#0" expanded="true" />
             <element signature="e#4936#4952#0" expanded="true" />
+            <element signature="e#5335#5351#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/squd-hero-form.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
         </state>
       </provider>
     </entry>
