@@ -1,19 +1,28 @@
-<h1>Hero List</h1>
+<h1>Hero list!</h1>
 
-#if($heroes)
-<ul>
-
-#foreach($hero in $heroes)
-
-<li><a href="/heroes/$hero.getId()">hero.name()</a></li>
-<li><a href="/heroes/$hero.getId()">hero.age()</a></li>
-<li><a href="/heroes/$hero.getId()">hero.power()</a></li>
-<li><a href="/heroes/$hero.getId()">hero.weakness()</a></li>
-
+        #if ($heroes)
+<table class="table table-striped">
+<thead class="thead-dark">
+<tr>
+    <th scope="col">Name</th>
+    <th scope="col">Age</th>
+    <th scope="col">Power</th>
+    <th scope="col">Weakness</th>
+</tr>
+</thead>
+#foreach ($hero in $heroes)
+<tbody>
+<tr>
+    <td>$hero.getName()</td>
+    <td>$hero.getAge()</td>
+    <td>$hero.getPower()</td>
+    <td>$hero.getWeakness()</td>
+</tr>
+</tbody>
 #end
-</ul>
-#else
-<p>Noe heroes</p>
-
-#end
+</table>
+<a href ='/'>Go Back</a>
+<a href="/heroes/new">Add a  Hero</a>
+        #else
 <a href="/heroes/new">Add a new Hero</a>
+        #end
