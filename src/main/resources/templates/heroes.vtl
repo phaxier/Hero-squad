@@ -1,6 +1,6 @@
 <h1>Hero list!</h1>
 
-        #if ($heroes)
+        #if ($heroes in $heroes)
 <table class="table table-striped">
 <thead class="thead-dark">
 <tr>
@@ -20,9 +20,9 @@
 </tr>
 </tbody>
 #end
-</table>
+</table> #else
 <a href ='/'>Go Back</a>
 <a href="/heroes/new">Add a  Hero</a>
-        #else
+
 <a href="/heroes/new">Add a new Hero</a>
         #end
