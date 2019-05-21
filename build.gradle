@@ -6,6 +6,8 @@ plugins {
 group 'Hero'
 version '1.0-SNAPSHOT'
 mainClassName = "App"
+archivesBaseName = "Hero"
+applicationName = "Hero"
 
 sourceCompatibility = 1.8
 
@@ -18,3 +20,5 @@ dependencies {
     compile group: 'com.sparkjava', name: 'spark-core', version: '2.3'
     compile group: 'org.apache.velocity', name: 'velocity', version: '1.7'
 }
+
+task stage(dependsOn:['clean', 'installDist'])

@@ -11,6 +11,15 @@ public class App {
     public static void main(String[] args) {
         staticFileLocation("/public");
         String layout = "templates/layout.vtl";
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        Integer port;
+        if(processBuilder.environment().get("PORT") != null){
+            port = Integer.parseInt(processBuilder.environment().get("PORT"));
+        }else{
+            port= 4567;
+        }
+        port(port);
+
    get("/", (request, response)->{
        Map<String, Object> model = new HashMap<String, Object>();
 
@@ -32,39 +41,36 @@ public class App {
    }, new VelocityTemplateEngine());
 
 
-    post("/heroes",(request,response) -> {
-            Map<String, Object> model = new HashMap<String, Object>();
-        String name= request.queryParams("name");
-        Integer age = Integer.parseInt(request.queryParams("9"));
-        String power = request.queryParams("power");
-        String weakness = request.queryParams("weakness");
-
-            Hero newHero = new Hero("Mathew",9,"fit","poor");
-            model.put("template", "templates/success.vtl");
-            return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
+//    post("/heroes",(request,response) -> {
+//            Map<String, Object> model = new HashMap<String, Object>();
+//        String name= request.queryParams("name");
+//        Integer age = Integer.parseInt(request.queryParams("9"));
+//        String power = request.queryParams("power");
+//        String weakness = request.queryParams("weakness");
+//
+//            Hero newHero = new Hero("Mathew",9,"fit","poor");
+//            model.put("template", "templates/success.vtl");
+//            return new ModelAndView(model, layout);
+//        }, new VelocityTemplateEngine());
 
         post("/heroes", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
 
-            ArrayList<Hero> heroes = request.session().attribute("Heroes");
-            if(heroes == null) {
-                heroes = new ArrayList<Hero>();
-                request.session().attribute("heroes", heroes);
-            }
-            String name= request.queryParams("name");
-            Integer age = Integer.parseInt(request.queryParams("9"));
+            Squad squad = Squad.find(Integer.parseInt(request.queryParams("squadId")));
+
+            String name = request.queryParams("name");
+            Integer age = Integer.parseInt(request.queryParams("age"));
             String power = request.queryParams("power");
             String weakness = request.queryParams("weakness");
 
-            Hero newHero = new Hero(name,age,power,weakness);
-            request.session().attribute("hero", newHero);
+            Hero hero = new Hero(name, age, power, weakness);
 
+            squad.addHero(hero);
 
-            model.put("template", "templates/success.vtl");
+            model.put("squad", squad);
+            model.put("template", "templates/squad-heroes-success.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
-
         get("/", (request, response) ->{
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("heroes", request.session().attribute("hero"));
@@ -97,14 +103,14 @@ public class App {
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
-        get("/ squads", (request, response)->{
+        get("/squads", (request, response)->{
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("squads", Squad.all());
             model.put("template", "templates/squads.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
-        get("/Squads/:id", (request, response)->{
+        get("/squads/:id", (request, response)->{
             Map<String, Object> model = new HashMap<String, Object>();
             Squad squad = Squad.find(Integer.parseInt(request.params(":id")));
             model.put("squad", squad);
