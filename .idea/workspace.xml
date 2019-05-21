@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c11ac4ce-1e07-411b-b94c-a0e5fcf4a698" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Squad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Squad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SquadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SquadTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -71,8 +73,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/SquadTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+                <state relative-caret-position="330">
+                  <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -83,11 +85,13 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Squad.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+                <state relative-caret-position="165">
+                  <caret line="11" selection-start-line="11" selection-end-line="11" />
                   <folding>
                     <element signature="e#79#80#0" expanded="true" />
                     <element signature="e#107#108#0" expanded="true" />
+                    <element signature="e#136#137#0" expanded="true" />
+                    <element signature="e#163#164#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -170,8 +174,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/success.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/heroes.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/hero.vtl" />
-        <option value="$PROJECT_DIR$/src/test/java/SquadTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Squad.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SquadTest.java" />
       </list>
     </option>
   </component>
@@ -286,10 +290,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="50" y="27" width="1316" height="741" extended-state="6" />
+    <frame x="708" y="27" width="658" height="741" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.060629923" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.060629923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -318,7 +322,7 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.05905512" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.060629923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -326,7 +330,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info active="true" anchor="bottom" x="50" y="64" width="1316" height="704" id="Terminal" maximized="true" order="1" type="WINDOWED" visible="true" weight="0.19338843" />
+      <window_info anchor="bottom" x="50" y="64" width="1316" height="704" id="Terminal" maximized="true" order="1" type="WINDOWED" weight="0.19338843" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
@@ -460,19 +464,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Squad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#79#80#0" expanded="true" />
             <element signature="e#107#108#0" expanded="true" />
+            <element signature="e#136#137#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SquadTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        <state relative-caret-position="330">
+          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

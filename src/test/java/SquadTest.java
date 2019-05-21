@@ -12,6 +12,14 @@ public class SquadTest {
     @Test
     public void getName_SquadInstantiatesWithName_home(){
         Squad testSquad = new Squad("Home");
-        assertEqual(true, testSquad.getName());
+        assertEquals(true, testSquad.getName());
+    }
+
+    @Test
+    public void all_returnsAllInstancesOfSquad_true(){
+        Squad firstSquad = new Squad("Home");
+        Squad secondSquad = new Squad("Team");
+        assertEquals(true, Squad.all().contains(FirstSquad));
+        assertEquals(true, Squad.all().contains(secondSquad));
     }
 }
