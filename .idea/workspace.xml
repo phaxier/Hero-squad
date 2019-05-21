@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c11ac4ce-1e07-411b-b94c-a0e5fcf4a698" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Squad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Squad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SquadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SquadTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -73,8 +71,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/SquadTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="44" selection-start-line="44" selection-end-line="44" />
+                <state relative-caret-position="186">
+                  <caret line="58" selection-start-line="58" selection-end-line="58" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -473,8 +471,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SquadTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="186">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -48,4 +48,14 @@ public class SquadTest {
         Squad testSquad = new Squad("Team","find", "16");
         assertEquals(1, testSquad.getId());
     }
+
+    @Test
+
+    public void find_returnsSquadWithSameId_secondSquad (){
+        Squad.clear();
+        Squad firstSquad = new Squad ("Team","find", "16");
+        Squad secondSquad = new Squad ("Mathew","charity", "10");
+        assertEquals(Squad.find(secondSquad.getId()), secondSquad);
+
+    }
 }
