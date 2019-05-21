@@ -46,7 +46,7 @@ public class SquadTest {
     @Test
     public void getId_squadInstantiatesWithAnId_1() {
         Squad testSquad = new Squad("Team","find", "16");
-        assertEquals(1, testSquad.getId());
+        assertEquals(2, testSquad.getId());
     }
 
     @Test
@@ -64,5 +64,13 @@ public class SquadTest {
         Squad.clear();
         Squad testSquad = new Squad("Team","find", "16");
         assertEquals(0, testSquad.getHeroes().size());
+    }
+
+    @Test
+    public void addHero_addsHeroToList_true () {
+        Squad testSquad = new Squad ("Team","find", "16");
+        Hero testHero = new Hero ("lawn", 9, "fit", "poor");
+        testSquad.addHero(testHero);
+        assertTrue(testSquad.getHeroes().contains(testHero));
     }
 }
