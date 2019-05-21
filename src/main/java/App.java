@@ -126,7 +126,7 @@ public class App {
             String cause = request.queryParams("cause");
             String max = request.queryParams("max");
             Squad squad = new Squad(name, cause, max);
-            model.put("template", "templates/squads-success.vtl");
+            model.put("template", "templates/squad-heroes-success.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
