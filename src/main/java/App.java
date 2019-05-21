@@ -1,6 +1,8 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.ArrayList;
+
+import org.apache.velocity.app.Velocity;
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 import static spark.Spark.*;
@@ -102,7 +104,13 @@ public class App {
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
-
+        get("/Squads/:id", (request, response)->{
+            Map<String, Object> model = new HashMap<String, Object>();
+            Squad squad = Squad.find(Integer.parseInt(request.params(":id")));
+            model.put("squad", squad);
+            model.put("template", "templates/squad.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
 
 
     }
