@@ -36,10 +36,16 @@ public class SquadTest {
     }
 
     @Test
-    public void clear_emptiesAllSquadsList_0(){
+    public void clear_emptiesAllSquadsFromList_0(){
         Squad testSquad = new Squad("Team","find", "16");
         Squad.clear();
         assertEquals(Squad.all().size(),0);
 
+    }
+
+    @Test
+    public void getId_squadInstantiatesWithAnId_1() {
+        Squad testSquad = new Squad("Team","find", "16");
+        assertEquals(1, testSquad.getId());
     }
 }
