@@ -8,4 +8,10 @@ public class SquadTest {
         Squad testSquad = new Squad("Home");
         assertEquals(true, testSquad instanceof Squad);
     }
+
+    @Test
+    public void getName_SquadInstantiatesWithName_home(){
+        Squad testSquad = new Squad("Home");
+        assertEqual(true, testSquad.getName());
+    }
 }
